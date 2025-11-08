@@ -9,7 +9,7 @@ This repository represents the basic and fundamentals to advanced concepts of CS
 
 # List of Project Branches
 
-### 1. [Introduction To C Programming](https://github.com/himadree-chaudhury/AI-ML-Foundation/tree/intro-to-c)
+### 1. [Introduction To C Programming](https://github.com/himadree-chaudhury/CS-Fundamentals/tree/intro-to-c)
 
 This branch contains resources and code examples for learning C programming. It covers fundamental C programming concepts, libraries commonly used in C, and practical implementations of C algorithms.
 
@@ -123,7 +123,7 @@ git worktree add "./New-Project" new-project
    git rm -r --cached "Introduction To C Programming"
    ```
 
-   Notice the quotes — they’re essential because of the spaces.
+   Notice the quotes - they’re essential because of the spaces.
 
    Then commit and push:
 
@@ -142,7 +142,7 @@ git worktree add "./New-Project" new-project
 
    The entry for `Introduction To C Programming` should be gone.
 
-   And on GitHub, refresh the main branch — that folder with the right arrow should disappear. Only your actual root files (e.g., README.md) should remain.
+   And on GitHub, refresh the main branch - that folder with the right arrow should disappear. Only your actual root files (e.g., README.md) should remain.
 
 ---
 
@@ -160,11 +160,45 @@ Remove a worktree:
 git worktree remove "./Introduction To C++ For DSA"
 ```
 
-Detach a branch but keep files:
+Detach a worktree(force remove if necessary):
 
 ```bash
 git worktree remove --force "./Introduction To C++ For DSA"
 ```
+
+To undo the commit and keep file changes(Local):
+
+```bash
+git reset --soft HEAD^
+```
+
+To undo the commit and discard all changes(Local):
+
+```bash
+git reset --hard HEAD^
+```
+
+To undo a commit that has already been pushed to a remote repository:
+
+```bash
+git revert HEAD
+```
+
+To delete a local branch(switch to another branch first):
+
+```bash
+git branch -d <branch-name>
+```
+
+for force use `-D` instead of `-d`.
+
+To delete a remote branch:
+
+```bash
+git push <remote-name> --delete <branch-name>
+```
+
+Typically, the `<remote-name>` is `origin`.
 
 ---
 
