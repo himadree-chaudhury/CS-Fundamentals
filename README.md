@@ -111,7 +111,7 @@ git worktree add "./New-Project" new-project
 
    ```bash
    git add .gitignore
-   git commit -m "Ignore 'Python For ML' folder on main"
+   git commit -m "Ignore 'Introduction To C Programming' folder on main"
    git push origin main
    ```
 
