@@ -47,7 +47,7 @@ Student *createStudentDynamic(string name, int age, float marks)
 
     // If the object is created statically by Student s("Jessica", 22, 92.0) then it will be destroyed when the function ends.So, we can not access when the function ends as the pointer address will be invalid. But if we create the object dynamically using new keyword then it will not be destroyed when the function ends and we can access it later.But we have to delete it manually to avoid memory leak.
 
-    Student *s = new Student(name, age, marks); // dynamic object creation inside the function.
+    Student *s = new Student(name, age, marks); // dynamic object creation inside the function.Why new keyword? because it allocates memory on the heap and the object will persist beyond the function scope until it is explicitly deleted.
     return s;                                   // return by pointer
 }
 

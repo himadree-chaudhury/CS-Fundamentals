@@ -1,2 +1,18 @@
-ekmnoy
-eefilloorvw
+Student 1: 
+Name: John Doe
+Age: 14
+Roll: 5
+Marks: 90
+
+Student 2: 
+Name: Alice Johnson
+Age: 19
+Roll: 8
+Marks: 90
+
+Student 3: 
+Name: Jane Smith
+Age: 22
+Roll: 2
+Marks: 85
+
