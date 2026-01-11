@@ -36,7 +36,7 @@ int main()
     for (int i = 1; i < n; i = i * 2) // O(log n)
     {
         cout << i << " "; // O(1)
-    } // Overall O(4) => O(log n) when n=16(2-based)
+    } // Overall O(4) => O(log n) when n=16(2-based, is it alwasys base 2? Yes for binary operations, otherwise base can be different but we generally ignore the base in Big O notation)
     cout << endl;
 
     // % 3. Sqare root Complexity O(√n): The time complexity grows proportionally to the square root of the input size.
