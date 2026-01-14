@@ -33,7 +33,7 @@ int main()
     }
 
     // sorting based the array of objects based on marks in descending order. If marks are same then sort based on age in ascending order.
-    sort(arr, arr + n, cmp); // cmp is a comparator function defined above
+    sort(arr, arr + n, cmp); // cmp is a comparator function defined above, Here arr is not the whole array but the pointer to the first element of the array and arr+n is the pointer to one past the last element of the array.
 
     for (int i = 0; i < n; i++)
     {
