@@ -3,9 +3,6 @@ using namespace std;
 
 // Linked List Operations
 // Insertion: at head, at tail, at position
-// Deletion: at head, at tail, at position
-// Printing: forward, backward
-// Sorting: Ascending, Descending
 
 class Node
 {

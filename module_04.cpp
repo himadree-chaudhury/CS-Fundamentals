@@ -23,7 +23,7 @@ int main()
     vector<int> arr = {1, 2, 3, 4, 5};
     cout << (int)&arr[2] << " " << (int)&arr[3] << endl; // Address of arr[2] and arr[3] are contiguous in memory
 
-    // *Linked List(singly linked list): A linked list is a linear data structure where each element (node) contains a value and a pointer to the next node in the sequence. The final element points to null. Unlike arrays, linked lists do not require contiguous memory allocation, allowing for dynamic resizing and efficient insertions and deletions. However, they have higher memory overhead due to storing pointers and can have slower access times since elements are not stored in contiguous memory locations.
+    // *Linked List(singly linked list): A linked list is a linear data structure where each element (node) contains a value and a pointer to the next node in the sequence. The final element points to null. Unlike arrays, linked lists do not require contiguous memory allocation, allowing for dynamic resizing and efficient insertions and deletions. However, they have higher memory overhead due to storing pointers and can have slower access times since elements are not stored in contiguous memory locations. Why it is called singly linked list? Because each node contains a pointer to the next node only.
 
     // Steps to implement a singly linked list:
     // 1. Define a Node structure that contains data and a pointer to the next node using class/struct.
