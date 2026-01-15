@@ -19,11 +19,12 @@ public:
     }
 };
 
-void print_reverse(Node *head);
 void delete_at_head(Node *&head);
 void delete_at_position(Node *head, int idx);
 void delete_at_tail(Node *head, Node *&tail, int idx);
 void sort_linked_list(Node *head);
+void print_reverse(Node *head);
+void reverse_linked_list(Node *&head, Node *&tail, Node *temp);
 
 int main()
 {
@@ -64,18 +65,12 @@ int main()
     // Sort the linked list
     sort_linked_list(head);
 
-    // Print the linked list in reverse order using recursion
+    // Print the linked list in reverse order using recursion. This does not change the linked list structure.
     print_reverse(head);
+
+    // Reverse the linked list. This actually changes the linked list structure, like head becomes tail and tail becomes head.
+    reverse_linked_list(head, tail, head);
     return 0;
-}
-
-void print_reverse(Node *head) // Complexity O(n)
-{
-    if (head == NULL)
-        return;
-
-    print_reverse(head->next);
-    cout << head->value << " ";
 }
 
 void delete_at_tail(Node *head, Node *&tail, int idx) // Complexity O(n)
@@ -127,4 +122,27 @@ void sort_linked_list(Node *head) // Bubble/Selection Sort. Complexity O(n^2). C
             }
         }
     }
+}
+
+void print_reverse(Node *head) // Complexity O(n)
+{
+    if (head == NULL)
+        return;
+
+    print_reverse(head->next);
+    cout << head->value << " ";
+}
+
+void reverse_linked_list(Node *&head, Node *&tail, Node *temp) // Complexity O(n)
+{
+    if (temp->next == NULL)
+    {
+        head = temp; // tail becomes head
+        return;
+    }
+
+    reverse_linked_list(head, tail, temp->next);
+    temp->next->next = temp;
+    temp->next = NULL;
+    tail = temp;
 }
