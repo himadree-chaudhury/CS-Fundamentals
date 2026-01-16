@@ -174,7 +174,7 @@ public:
 
 int main()
 {
-    StackUsingList st;
+    StackUsingList st; // StackUsingVector st; StackUsingDLL st;
     int n;
     cin >> n;
     for (int i = 0; i < n; i++)
@@ -202,7 +202,7 @@ int main()
     stlStack.push(2);
     cout << "\nTop element of STL stack: " << stlStack.top() << endl;
     stlStack.pop();
-    cout << "Top element of STL stack after pop: " << stlStack.top() << endl;
+    if(!stlStack.empty()) cout << "Top element of STL stack after pop: " << stlStack.top() << endl;
     cout << "Size of STL stack: " << stlStack.size() << endl;
     cout << "Is STL stack empty? " << (stlStack.empty() ? "Yes" : "No") << endl;
     return 0;

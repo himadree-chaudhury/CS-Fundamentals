@@ -1,9 +1,9 @@
-Top element: 60
-Top element after pop: 50
-Stack size: 5
-Is stack empty? No
-50 40 30 20 10 
-Top element of STL stack: 2
-Top element of STL stack after pop: 1
-Size of STL stack: 1
-Is STL stack empty? No
+Top element of stack using queue: 60
+Top element of stack using queue after pop: 50
+Size of stack using queue: 5
+Is stack using queue empty? No
+Front element of queue using stack: 10
+Front element of queue using stack after pop: 20
+Back element of queue using stack: 60
+Size of queue using stack: 5
+Is queue using stack empty? No
