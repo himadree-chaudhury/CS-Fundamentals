@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 // Non linear Data Structures: Non linear data structures are those data structures in which the data elements are not arranged in a sequential manner. Instead, they are arranged in a hierarchical manner or in a way that allows for multiple connections between elements. Examples of non-linear data structures include trees and graphs.
@@ -12,13 +12,13 @@ using namespace std;
 
 // *Binary Tree
 // A binary tree is a type of tree data structure in which each node has at most two children, referred to as the left child and the right child. Binary tree can be made from linked list. Properties of binary trees include:
-// 1. The maximum number of nodes at level 'l' is 2^l. e.g., at level 0 (root level), there is 2^0 = 1 node; at level 1, there are 2^1 = 2 nodes; at level 2, there are 2^2 = 4 nodes, and so on.
+// 1. The maximum number of nodes at level 'l'(leaf-node) is 2^l. e.g., at level 0 (root level), there is 2^0 = 1 node; at level 1, there are 2^1 = 2 nodes; at level 2, there are 2^2 = 4 nodes, and so on.
 // 2. The maximum number of nodes in a binary tree of height 'h' is 2^(h+1) - 1. e.g., for a binary tree of height 2, the maximum total number of nodes is 2^(2+1) - 1 = 7.
 // 3. In a binary tree with 'n' nodes, the minimum possible height is log2(n + 1) - 1. e.g., for a binary tree with 7 nodes, the minimum height is log2(7 + 1) - 1 = 2.
 
 // N-ary Tree: N-ary tree is a generalization of a binary tree where each node can have at most 'N' children.
 
-// *Traversal Order:  
+// *Traversal Order:
 // 1. Depth-wise: In depth-wise traversal, we explore as far down a branch as possible before backtracking. The common depth-wise traversal methods are:
 // i. Preorder : In preorder traversal, we visit the root node first, then recursively visit the left subtree, followed by the right subtree.(root -> left-subtree -> right-subtree)
 // ii. Inorder: In inorder traversal, we recursively visit the left subtree first, then visit the root node, and finally recursively visit the right subtree.(left-subtree -> root -> right-subtree)
@@ -42,34 +42,40 @@ public:
     }
 };
 
+void pre_order_traversal(Node *root)
+{
+    if (root == NULL)
+        return;
 
-void preOrderTraversal(Node* root){
-    if(root == NULL) return;
-
-    cout<<root->value<<" ";
-    preOrderTraversal(root->left);
-    preOrderTraversal(root->right);
+    cout << root->value << " ";
+    pre_order_traversal(root->left);
+    pre_order_traversal(root->right);
 }
 
-void inOrderTraversal(Node* root){
-    if(root == NULL) return;
+void in_order_traversal(Node *root)
+{
+    if (root == NULL)
+        return;
 
-    inOrderTraversal(root->left);
-    cout<<root->value<<" ";
-    inOrderTraversal(root->right);
+    in_order_traversal(root->left);
+    cout << root->value << " ";
+    in_order_traversal(root->right);
 }
 
-void postOrderTraversal(Node* root){
-    if(root == NULL) return;
+void post_order_traversal(Node *root)
+{
+    if (root == NULL)
+        return;
 
-    postOrderTraversal(root->left);
-    postOrderTraversal(root->right);
-    cout<<root->value<<" ";
+    post_order_traversal(root->left);
+    post_order_traversal(root->right);
+    cout << root->value << " ";
 }
 
-int main(){
+int main()
+{
 
-    Node* root = new Node(1);
+    Node *root = new Node(1);
 
     root->left = new Node(2);
     root->right = new Node(3);
@@ -81,16 +87,16 @@ int main(){
     root->right->right = new Node(7);
 
     // Preorder Traversal
-    cout<<"Preorder Traversal: ";
-    preOrderTraversal(root);
+    cout << "Preorder Traversal: ";
+    pre_order_traversal(root);
 
     // Inorder Traversal
-    cout<<"\nInorder Traversal: ";
-    inOrderTraversal(root);
+    cout << "\nInorder Traversal: ";
+    in_order_traversal(root);
 
     // Postorder Traversal
-    cout<<"\nPostorder Traversal: ";
-    postOrderTraversal(root);
-    
+    cout << "\nPostorder Traversal: ";
+    post_order_traversal(root);
+
     return 0;
 }
