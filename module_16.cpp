@@ -135,6 +135,20 @@ int height_of_binary_tree(Node *root)
 }
 
 // Depth of binary tree: Depth of a binary tree is defined as the number of edges from the root node to a specific node. Depth count starting from root node as 0, then move downwards to leaf nodes. Whenever moving from a node to its child, increment the depth by 1.
+int depth_of_binary_tree(Node *root, int target_value, int current_depth = 0)
+{
+    if (root == NULL)
+        return -1; // Target value not found
+
+    if (root->value == target_value)
+        return current_depth;
+
+    int left_depth = depth_of_binary_tree(root->left, target_value, current_depth + 1);     // current_depth + 1 while moving down
+    if (left_depth != -1)
+        return left_depth;      // Target found in left subtree
+
+    return depth_of_binary_tree(root->right, target_value, current_depth + 1);
+}
 int main()
 {
     Node *root = input_binary_tree();
@@ -155,6 +169,14 @@ int main()
     // Height of Binary Tree
     int height = height_of_binary_tree(root);
     cout << "Height of the binary tree: " << height << endl;
+
+    // Depth of Binary Tree (example for value 5)
+    int target_value = 5;
+    int depth = depth_of_binary_tree(root, target_value);
+    if (depth != -1)
+        cout << "Depth of node with value " << target_value << ": " << depth << endl;
+    else
+        cout << "Node with value " << target_value << " not found in the tree." << endl;
 
     return 0;
 }

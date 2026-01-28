@@ -1,4 +1,2 @@
-Level Order Traversal: 1 2 3 4 5 6 7 
-Total number of nodes in the binary tree: 7
-Total number of leaf nodes in the binary tree: 4
-Height of the binary tree: 2
+First element: 1
+Second element: Hello
