@@ -10,8 +10,9 @@ This repository represents the basic and fundamentals to advanced concepts of CS
 # List of Project Branches
 
 ### 1. [Introduction To C Programming](https://github.com/himadree-chaudhury/CS-Fundamentals/tree/intro-to-c)
-
-This branch contains resources and code examples for learning C programming. It covers fundamental C programming concepts, libraries commonly used in C, and practical implementations of C algorithms.
+### 2. [Introduction to C++ For DSA](https://github.com/himadree-chaudhury/CS-Fundamentals/tree/intro-to-cpp)
+### 3. [Basic Data Structures](https://github.com/himadree-chaudhury/CS-Fundamentals/tree/basic-data-structures)
+### 4. [Introduction to Algorithms](https://github.com/himadree-chaudhury/CS-Fundamentals/tree/intro-to-algorithms)
 
 # Managing Multiple Project Folders in a Single Git Repository (One Branch per Folder using Worktrees)
 
@@ -25,6 +26,8 @@ AI-ML/                                    ← Main repo
 │
 ├─ Introduction To C Programming/         ← Local folder for 'intro-to-c' branch
 ├─ Introduction to C++ For DSA/           ← Local folder for 'intro-to-cpp' branch
+├─ Basic Data Structures/                ← Local folder for 'basic-data-structures' branch
+├─ Introduction to Algorithms/           ← Local folder for 'intro-to-algorithms' branch
 └─ README.md                              ← Lives only in the main branch
 ```
 
