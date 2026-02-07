@@ -26,8 +26,8 @@ AI-ML/                                    ← Main repo
 │
 ├─ Introduction To C Programming/         ← Local folder for 'intro-to-c' branch
 ├─ Introduction to C++ For DSA/           ← Local folder for 'intro-to-cpp' branch
-├─ Basic Data Structures/                ← Local folder for 'basic-data-structures' branch
-├─ Introduction to Algorithms/           ← Local folder for 'intro-to-algorithms' branch
+├─ Basic Data Structures/                 ← Local folder for 'basic-data-structures' branch
+├─ Introduction to Algorithms/            ← Local folder for 'intro-to-algorithms' branch
 └─ README.md                              ← Lives only in the main branch
 ```
 
@@ -35,6 +35,8 @@ On GitHub:
 
 - The `intro-to-c` branch only contains the contents of `Introduction To C Programming/`
 - The `intro-to-cpp` branch only contains the contents of `Introduction to C++ For DSA/`
+- The `basic-data-structures` branch only contains the contents of `Basic Data Structures/`
+- The `intro-to-algorithms` branch only contains the contents of `Introduction to Algorithms/`
 - The `main` branch does **not** contain these folders (they're in `.gitignore` locally)
 
 ---
