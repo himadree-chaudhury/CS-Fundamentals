@@ -3,6 +3,7 @@ using namespace std;
 
 // *Binary Search Tree (BST): A binary search tree is a binary tree in which each node has a value, and the value of each node is greater than the values of all nodes in its left subtree and less than the values of all nodes in its right subtree. No value should be repeated in a BST. This property allows for efficient searching, insertion, and deletion operations.
 // BST = Binary Tree + Binary Search
+// BST gives a sorted order of elements when we perform an in-order traversal (left, root, right). This is because the left subtree contains values less than the root, and the right subtree contains values greater than the root.
 
 class Node
 {

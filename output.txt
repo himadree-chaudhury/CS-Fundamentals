@@ -1,3 +1,29 @@
-Updated Heap After Inserting: 11 9 10 7 6 8 
-Deleted Root Node: 11
-Updated Heap After Deletion: 10 9 8 7 6 
+Top element of max priority queue: 20
+Size of max priority queue: 3
+Is max priority queue empty? No
+New top element of max priority queue after popping: 10
+Top element of min priority queue: 5
+New top element of min priority queue after popping: 10
+Top element of custom priority queue (value, priority): (2, 1)
+Number: 10, Frequency: 2
+Number: 20, Frequency: 1
+Frequency of 10: 2
+Word frequencies:
+Word: I, Frequency: 3
+Word: TV, Frequency: 1
+Word: day, Frequency: 1
+Word: enjoy, Frequency: 1
+Word: every, Frequency: 1
+Word: favorite, Frequency: 1
+Word: football, Frequency: 4
+Word: is, Frequency: 1
+Word: love, Frequency: 1
+Word: matches, Frequency: 1
+Word: my, Frequency: 1
+Word: on, Frequency: 1
+Word: play, Frequency: 1
+Word: sport, Frequency: 1
+Word: watching, Frequency: 1
+Unique numbers in the set: 10 20 
+10 is present in the set.
+Unique numbers in the set in reverse order: 20 10 
