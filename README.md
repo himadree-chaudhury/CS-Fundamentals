@@ -13,6 +13,7 @@ This repository represents the basic and fundamentals to advanced concepts of CS
 ### 2. [Introduction to C++ For DSA](https://github.com/himadree-chaudhury/CS-Fundamentals/tree/intro-to-cpp)
 ### 3. [Basic Data Structures](https://github.com/himadree-chaudhury/CS-Fundamentals/tree/basic-data-structures)
 ### 4. [Introduction to Algorithms](https://github.com/himadree-chaudhury/CS-Fundamentals/tree/intro-to-algorithms)
+### 5. [Problem Solving](https://github.com/himadree-chaudhury/CS-Fundamentals/tree/problem-solving)
 
 # Managing Multiple Project Folders in a Single Git Repository (One Branch per Folder using Worktrees)
 
@@ -28,6 +29,7 @@ AI-ML/                                    ← Main repo
 ├─ Introduction to C++ For DSA/           ← Local folder for 'intro-to-cpp' branch
 ├─ Basic Data Structures/                 ← Local folder for 'basic-data-structures' branch
 ├─ Introduction to Algorithms/            ← Local folder for 'intro-to-algorithms' branch
+├─ Problem Solving/                       ← Local folder for 'problem-solving' branch
 └─ README.md                              ← Lives only in the main branch
 ```
 
@@ -37,6 +39,7 @@ On GitHub:
 - The `intro-to-cpp` branch only contains the contents of `Introduction to C++ For DSA/`
 - The `basic-data-structures` branch only contains the contents of `Basic Data Structures/`
 - The `intro-to-algorithms` branch only contains the contents of `Introduction to Algorithms/`
+- The `problem-solving` branch only contains the contents of `Problem Solving/`
 - The `main` branch does **not** contain these folders (they're in `.gitignore` locally)
 
 ---
