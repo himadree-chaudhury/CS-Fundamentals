@@ -1,0 +1,10 @@
+Name: James, Score: 10
+Name: Tom, Score: 85
+Name: Jack, Score: 90
+Name: Jill, Score: 95
+Name: Bob, Age: 30, Score: 75.5
+Name: Alice, Age: 25, Score: 85.2
+3 5 9 2 3 
+3 2 9 5 3 
+Max element: 9
+Index of max element: 2
