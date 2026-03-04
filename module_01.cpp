@@ -55,6 +55,69 @@ int main()
 
     auto max_it = max_element(v.begin(), v.end()); // returns an iterator pointing to the maximum element in the vector
     cout << "\nMax element: " << *max_it << endl;
-    cout << "Index of max element: " << max_it - v.begin() << endl; // to get the index of the maximum element, we can subtract the beginning iterator from the max iterator   
+    cout << "Index of max element: " << max_it - v.begin() << endl; // to get the index of the maximum element, we can subtract the beginning iterator from the max iterator
+
+    // 2D vector
+    vector<vector<int>> matrix(3, vector<int>(4, 5)); // creates a 3x4 matrix initialized with 0
+    for (int i = 0; i < matrix.size(); i++)
+        for (int j = 0; j < matrix[i].size(); j++)
+            cin >> matrix[i][j];
+
+    for (const auto row : matrix)
+    {
+        for (const auto value : row)
+            cout << value << " ";
+        cout << endl;
+    }
+
+    // *Deque
+    // A deque (double-ended queue) is a dynamic array that allows fast insertion and deletion at both ends. It is defined in the <deque> header and provides random access to its elements. Deques are often used when we need to add or remove elements from both ends of a collection.\
+
+    deque<int> dq;
+    for (int i = 0; i < 5; i++)
+        dq.push_back(i);
+
+    dq.push_front(-1); // adding an element at the front
+    dq.push_back(5);   // adding an element at the back
+    dq.pop_front();    // removing an element from the front
+    dq.pop_back();     // removing an element from the back
+    for (auto value : dq)
+        cout << value << " ";
+
+    // front() and back() functions are used to access the first and last elements of the deque respectively
+    cout << "\nFront element: " << dq.front() << endl;
+    cout << "Back element: " << dq.back() << endl;
+
+    // Why use vector over deque?: Vector use less momory
+
+    // *String
+    // A string is a sequence of characters that represents text. It is defined in the <string> header and provides various functions for manipulating and working with strings. Strings are commonly used for storing and processing textual data.
+
+    // *Map
+    // A map is a collection of key-value pairs where each key is unique. It is defined in the <map> header and provides fast retrieval of values based on their corresponding keys. Maps are often used for storing and accessing data based on unique identifiers.
+
+    map<string, int> ageMap;
+    ageMap["Alice"] = 25; // also can be written as ageMap.insert({"Alice", 25});
+    ageMap["Bob"] = 30;
+
+    for (auto [name, age] : ageMap)
+        cout << "Name: " << name << ", Age: " << age << endl;
+
+    auto it = ageMap.find("Alice"); // returns an iterator to the element with key "Alice"
+    if (it != ageMap.end())
+        cout << "Alice's age: " << it->second << endl; // as the iterator points to a pair, we can access the value using second.
+    // If we access map_name["key"] and the key does not exist, it will create a new entry with the default value (0 for int, empty string for string, etc.) and return a reference to it. This can lead to unintended consequences if we are not careful.
+    // begin(), end(), rbegin(), rend() iterators can also be used with maps to traverse through the elements.
+
+    map<int, int> freqMap;
+    freqMap.insert({1, 5});
+    freqMap.insert({2, 3});
+    freqMap.insert({3, 8});
+    freqMap.insert({4, 1});
+
+    auto l_bound = freqMap.lower_bound(2); // returns an iterator pointing to the first element that is not less than 2
+    auto u_bound = freqMap.upper_bound(2); // returns an iterator pointing to the first element that is greater than 2
+    cout << "Lower bound for 2: " << l_bound->first << " with frequency " << l_bound->second << endl;
+    cout << "Upper bound for 2: " << u_bound->first << " with frequency " << u_bound->second << endl;
     return 0;
 }

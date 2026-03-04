@@ -4,7 +4,18 @@ Name: Jack, Score: 90
 Name: Jill, Score: 95
 Name: Bob, Age: 30, Score: 75.5
 Name: Alice, Age: 25, Score: 85.2
-3 5 9 2 3 
-3 2 9 5 3 
-Max element: 9
-Index of max element: 2
+1 2 3 4 5 
+5 4 3 2 1 
+Max element: 5
+Index of max element: 4
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+0 1 2 3 4 
+Front element: 0
+Back element: 4
+Name: Alice, Age: 25
+Name: Bob, Age: 30
+Alice's age: 25
+Lower bound for 2: 2 with frequency 3
+Upper bound for 2: 3 with frequency 8
